@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../image/topo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@100;300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/horizon.otf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+        @font-face {
+            font-family: 'horizon';
+            font-style: normal;
+            font-weight: normal;
+            src: local('horizon.otf') url('../assets/horizon.otf') format('otf');
+        }
+        body {
+            background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#007254)) no-repeat;
+            background: -moz-linear-gradient(0deg, #CCCCCC, #000000);
+            background-size: cover;
+        }
+        h1 {
+            font-family: 'lalezar';
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            font-size: 350%;
+        }
+        .corpo {
+            z-index: 1;
+        }
+        .copy, .box, .tabela {
+            margin: 20px;
+            
+        }
+
+        .box {
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 15px;
+        }
+
+        fieldset {
+            border: 3px solid #007254;
+            padding: 25px;
+        }
+
+        legend {
+            border: 1px solid #007254;
+            padding: 10px;
+            text-align: center;
+            background-color: #007254;
+            border-radius: 8px;
+            color: white;
+            font-family: montserrat;
+        }
+
+        .inputBox {
+            position: relative;
+            margin-bottom: 20px;
+            color: white;
+            font-family: montserrat;
+
+        }
+        .input {
+            position: relative;
+            margin-bottom: 20px;
+            color: white;
+            font-family: montserrat;
+        }
+        .inputUser {
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+
+        .labelInput {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+            color: white;
+            font-family: montserrat;
+            padding-top: 10;
+
+        }
+
+        .inputUser:focus~.labelInput,
+        .inputUser:valid~.labelInput {
+            top: -20px;
+            font-size: 12px;
+            color: white;
+        }
+
+        #data_nascimento {
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        #submit {
+            background-color: #007254;
+            width: 100%;
+            border: none;
+            padding: 15px;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: montserrat;
+            transition: background-color 0.3s ease;
+        }
+
+        #submit:hover {
+            background-color: #007254;
+        }
+
+        .table-container {
+            padding-top: 30px ;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: montserrat;
+            z-index: 7;
+        }
+
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            background-color: #005e45;
+            color: white;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #004a36;
+            font-size: 25px;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+        .datanasc {
+            font-family: montserrat;
+        }
+        header {
+            z-index: 7;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(91, 91, 91, 0.7);
+            backdrop-filter: blur(6px);
+            max-height: 50px;
+            position: fixed;
+            width: 100%;
+        }
+        #menu-button {
+            background-color: rgba(255, 255, 255, 0%);
+            color: white;
+            font-size: 35px;
+        }
+
+        header .btnn {
+            text-align: left;
+            padding-left: 10px;
+        }
+        header a {
+            text-decoration: none;
+            color: white;
+        }
+        .topoimg img {
+            max-height: 50px;
+
+        }
+        #menu {
+            display: none;
+            background-color: ;
+            padding-top: 7px;
+            padding-left: 30px;
+            position: absolute;
+        }
+
+        #menu ul li {
+            list-style: none;
+            padding: 10px;
+            font-family: montserrat;
+            text-align: left;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .espaco {
+            color: rgba(0, 0, 0, 0%);
+        }
+        
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap">
+    <title>Preços</title>
+</head>
+
+<body>
+    <section id="cima">
+        
+    </section>
+    <header class="topo">
+
+        <div class="btnn">
+            <button id="menu-button"><a href="#cima">&#9776;</a></button>
+        </div>
+        <div class="imagem">
+            <figure class="topoimg">
+                <img src="../image/Logo.png" alt="logo">
+            </figure>
+        </div>
+        <div class="espaco">
+            aaaaa.
+        </div>
+    </header>
+    <br><br><br>
+    <aside>
+        <div id="menu">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="pag01mapa.html">Academias</a></li>
+            </ul>
+        </div>
+        <script>
+            var menuButton = document.getElementById("menu-button");
+            var menu = document.getElementById("menu");
+
+            menuButton.addEventListener("click", function () {
+                if (menu.style.display === "block") {
+                    menu.style.display = "none";
+                } else {
+                    menu.style.display = "block";
+                }
+            });
+        </script>
+    </aside>
+    <section class="corpo">
+    <div class="container">
+        <h1>DÊ O PRÓXIMO PASSO PARA O CORPO DOS SEUS SONHOS</h1>
+    </div>
+
+    <div class="copy">
+    </div>
+
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Fórmulario de clientes</b></legend>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome completo</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="tel" name="Telefone" id="Telefone" class="inputUser" required>
+                    <label for="Telefone" class="labelInput">Telefone</label>
+                </div>
+                <br>
+                <p class="inputBox">Sexo:</p>
+                <input type="radio" id="feminino" name="genero" value="Feminino" required>
+                <label class="input" for="feminino">Feminino</label>
+                <br><br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label class="input" for="masculino">Masculino</label>
+                <br><br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label class="input" for="outro">Outro</label>
+                <br><br>
+                <div class="inputBox">
+                    <label for="data_nascimento"><b>Data de nascimento</b></label>
+                    <input class="datanasc" type="date" name="data_nascimento" id="data_nascimento" required>
+                </div>
+                <br><br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelInput">Estado</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="endereço" id="endereço" class="inputUser" required>
+                    <label for="endereço" class="labelInput">Endereço</label>
+                </div>
+                <br><br>
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="table-container">
+    
+            <table>
+                <tr>
+                    <th>PLANO</th>
+                    <th>VALOR</th>
+                </tr>
+                <tr>
+                    <td><strong>Mensal</strong></td>
+                    <td>19,90</td>
+                </tr>
+                <tr>
+                    <td><strong>Trimestral</strong></td>
+                    <td>49,90</td>
+                </tr>
+                <tr>
+                    <td><strong>Anual</strong></td>
+                    <td>199,90</td>
+                </tr>
+            </table>
+        
+
+        <br>
+        <!-- Botão fictício animado com link para o WhatsApp -->
+        <a href="https://wa.me/31971205824" target="_blank" class="btn">Clique Aqui</a>
+        <br><br>
+
+    </div>
+    <div class="bg">
+        .
+    </div>
+    </section>
+
+</body>
+
+</html>

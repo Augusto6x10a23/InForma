@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0">
+    <link rel="shortcut icon" href="../image/topo.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@100;300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/horizon.otf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <style>
+        * {
+            text-align: center;
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+        @font-face {
+            font-family: 'horizon';
+            font-style: normal;
+            font-weight: normal;
+            src: url('assets/horizon.otf') format('otf');
+        }
+
+        body {
+            height: 1007px;
+            background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#007254)) no-repeat;
+            background: -moz-linear-gradient(0deg, #CCCCCC, #000000);
+            background-size: cover;
+        }
+
+        h1 {
+            padding-top: 70px;
+            text-align: center;
+            font-family: 'lalezar';
+            color: white;
+            font-size: 309%;
+            height: 48px;
+        }
+        h2 {
+            text-align: center;
+            font-family: 'lalezar';
+            font-size: 430%;
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(91, 91, 91, 0.7);
+            backdrop-filter: blur(6px);
+            max-height: 50px;
+            position: fixed;
+            width: 100%;
+        }
+
+        .topoimg img {
+            max-height: 50px;
+
+        }
+
+        #menu {
+            display: none;
+            background-color: ;
+            padding-top: 7px;
+            padding-left: 30px;
+            position: absolute;
+        }
+
+        #menu ul li {
+            list-style: none;
+            padding: 10px;
+            font-family: montserrat;
+            text-align: left;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu-button {
+            background-color: rgba(255, 255, 255, 0%);
+            color: white;
+            font-size: 35px;
+        }
+
+        header .btn {
+            text-align: left;
+            padding-left: 10px;
+        }
+
+        .espaco {
+            color: rgba(0, 0, 0, 0%);
+        }
+
+        .foot {
+            background-color: rgba(91, 91, 91, 0.7);
+            font-size: 10px;
+            padding-top: 5px;
+        }
+        .nome {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-family: montserrat;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 5px;
+
+        }
+
+        #pratique {
+            display: none;
+        }
+        #body-shape {
+            display: none;
+        }
+        #smart-fit {
+            display: none;
+        }
+        .foot {
+            background-color: rgba(91, 91, 91, 0.7);
+            font-size: 10px;
+            padding-top: 5px;
+        }
+        p {
+            padding: 5px;
+            text-align: center;
+            font-family: montserrat;
+            color: white;
+            padding-bottom: 10px;
+            line-height: 19.5px;
+            font-size: 120%;
+        }
+        .lista {
+            display: grid;
+            grid-template-columns: 150px 150px;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+
+        @media screen and (min-width: 380px){
+            .lista {
+                padding-left: 55px;
+            }
+            iframe {
+                width: 312px;
+                height: 450px;
+            }
+        }
+
+        @media screen and (min-width: 576px){
+            .lista {
+                padding-left: 155px;
+            }
+            h1 {
+                padding-top: 70px;
+                text-align: center;
+                font-family: 'lalezar';
+                color: white;
+                font-size: 355%;
+                height: 48px;
+            }
+            h2 {
+                text-align: center;
+                font-family: 'lalezar';
+                font-size: 500%;
+                color: white;
+            }
+            iframe {
+                width: 512px;
+                height: 450px;
+            }
+        }
+        @media screen and (min-width: 992px){
+            .lista {
+                padding-left: 589px;
+            }
+            h1 {
+                padding-top: 70px;
+                text-align: center;
+                font-family: 'lalezar';
+                color: white;
+                font-size: 355%;
+                height: 48px;
+            }
+            h2 {
+                text-align: center;
+                font-family: 'lalezar';
+                font-size: 500%;
+                color: white;
+            }
+            iframe {
+                width: 612px;
+                height: 450px;
+            }
+        }
+        iframe {
+            padding-bottom: 53px;
+        }
+        @media screen and (min-width: 1500px){
+            .lista {
+                padding-left: 786px;
+            }
+            h1 {
+                padding-top: 70px;
+                text-align: center;
+                font-family: 'lalezar';
+                color: white;
+                font-size: 355%;
+                height: 48px;
+            }
+            h2 {
+                text-align: center;
+                font-family: 'lalezar';
+                font-size: 500%;
+                color: white;
+            }
+        }
+    </style>
+    <title>InForma</title>
+
+</head>
+
+<body>
+
+    <header class="topo">
+
+        <div class="btn">
+            <button id="menu-button">&#9776;</button>
+        </div>
+        <div class="imagem">
+            <figure class="topoimg">
+                <img src="../image/Logo.png" alt="logo">
+            </figure>
+        </div>
+        <div class="espaco">
+            aaaaa.
+        </div>
+    </header>
+    <br><br><br>
+    <aside>
+        <div id="menu">
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="pag02preço.html">Preços</a></li>
+            </ul>
+        </div>
+        <script>
+            var menuButton = document.getElementById("menu-button");
+            var menu = document.getElementById("menu");
+
+            menuButton.addEventListener("click", function () {
+                if (menu.style.display === "block") {
+                    menu.style.display = "none";
+                } else {
+                    menu.style.display = "block";
+                }
+            });
+        </script>
+    </aside>
+    <div id="where">
+        <h1>ONDE USAR O</h1>
+        <h2>INFORMA</h2>
+        <div class="lista">
+                <button id="btnBodyTech" class="nome">BodyTech</button>
+                <button id="btnPratique" class="nome">Pratique</button>
+                <button id="btnBodyShape" class="nome">Body Shape</button>
+                <button id="btnSmartFit" class="nome">Smart Fit</button>
+        </div>
+    </div>
+    <div class="mapas">
+        <div id="body-tech">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1577.0103726393274!2d-43.93611274737731!3d-19.93350883790466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699c2cd5df779%3A0x70b2824a1e41274!2sBodytech%20-%20Savassi!5e0!3m2!1spt-BR!2sbr!4v1699812445034!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+        </div>
+        <div id="pratique">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8920.338043114627!2d-43.93073915795736!3d-19.943774267913838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699e6fd6abc63%3A0xc3ae2e0de0fbcbd5!2sAcademia%20Pratique%20Fitness%20-%20Mangabeiras%20%F0%9F%8F%8B%F0%9F%8F%BB!5e0!3m2!1spt-BR!2sbr!4v1699801543644!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="body-shape">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.5115163561873!2d-43.94542782375799!3d-19.9449793814469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699d57042f451%3A0xe5dee0948e502ac8!2sBody%20Shape!5e0!3m2!1spt-BR!2sbr!4v1699801593112!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="smart-fit">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15002.046095393187!2d-43.95315263235097!3d-19.944979066041252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce51bb3be15a39%3A0x4121f526c57114d0!2sAcademia%20Smart%20Fit%20-%20Savassi!5e0!3m2!1spt-BR!2sbr!4v1699801640172!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <script>
+        var bodyBtn = document.getElementById("btnBodyTech");
+        var bodyTech = document.getElementById("body-tech");
+        var off = document.getElementsByClassName("mapas")
+
+        bodyBtn.addEventListener("click", function () {
+            Pratique.style.display = "none";
+            smartFit.style.display = "none";
+            bodyShape.style.display = "none";
+            if (bodyTech.style.display === "block") {
+                bodyTech.style.display = "none";
+            } else {
+                bodyTech.style.display = "block";
+            }
+        });
+
+        
+        var pratBtn = document.getElementById("btnPratique");
+        var Pratique = document.getElementById("pratique");
+
+        pratBtn.addEventListener("click", function () {
+            bodyTech.style.display = "none";
+            bodyShape.style.display = "none";
+            smartFit.style.display = "none";
+            if (Pratique.style.display === "block") {
+                Pratique.style.display = "none";
+            } else {
+                Pratique.style.display = "block";
+            }
+        });
+
+        var shapeBtn = document.getElementById("btnBodyShape");
+        var bodyShape = document.getElementById("body-shape");
+
+        shapeBtn.addEventListener("click", function () {
+            Pratique.style.display = "none";
+            bodyTech.style.display = "none";
+            smartFit.style.display = "none";
+            if (bodyShape.style.display === "block") {
+                bodyShape.style.display = "none";
+            } else {
+                bodyShape.style.display = "block";
+            }
+        });
+
+        var fitBtn = document.getElementById("btnSmartFit");
+        var smartFit = document.getElementById("smart-fit");
+
+        fitBtn.addEventListener("click", function () {
+            bodyTech.style.display = "none";
+            bodyShape.style.display = "none";
+            Pratique.style.display = "none";
+            if (smartFit.style.display === "block") {
+                smartFit.style.display = "none";
+            } else {
+                smartFit.style.display = "block";
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+* {
+    text-align: center;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;   
+}
+
+#tudo {
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#007254)) no-repeat;
+    background: -moz-linear-gradient(0deg, #CCCCCC, #000000);
+    background-size: cover;
+}
+
+h1{
+    padding-top: 120px;
+    text-align: center;
+    font-family: 'lalezar';
+    color: white;
+    font-size: 275%;
+    font-weight: 100;
+    height: 60px;
+}
+h2 {
+    text-align: center;
+    font-family: 'lalezar';
+    font-size: 470%;
+    color: white;
+    padding-bottom: 30px;
+}
+#intro{
+    padding: 5px;
+    text-align: center;
+    font-family: montserrat;
+    color: white;
+    padding-bottom: 10px;
+    line-height: 19.5px;
+    font-size: 120%
+}
+.bodytxt p {
+    padding: 5px;
+    text-align: center;
+    font-family: montserrat;
+    color: white;
+    padding-bottom: 10px;
+    line-height: 19.5px;
+    font-size: 120%
+}
+.ponto img {
+    max-width: 100%;
+}
+.treino img {
+    max-width: 100%;
+}
+.liked p{
+    padding: 5px;
+    text-align: center;
+    font-family: montserrat;
+    color: white;
+    padding-bottom: 10px;
+    line-height: 19.5px;
+    font-size: 120%
+}
+h3 {
+    text-align: center;
+    font-family: 'lalezar';
+    font-size: 470%;
+    color: white;
+    height: 90px;
+}
+iframe {
+    border-radius: 30px;
+    padding-bottom: 10px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(91, 91, 91, 0.7);
+    backdrop-filter: blur(6px);
+    max-height: 50px;
+    position: fixed;
+    width: 100%;
+}
+
+.topoimg img {
+    max-height: 50px;
+    
+}
+#menu {
+    display: none;
+    background-color: ;
+    padding-top: 20px;
+    padding-left: 30px;
+    position: absolute;
+}
+#menu ul li{
+    list-style: none;
+    padding: 10px;
+    font-family: montserrat;
+    text-align: left;
+}
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+#menu-button{
+    background-color: rgba(255, 255, 255, 0%);
+    color: white;
+    font-size: 35px;
+}
+header .btn {
+    text-align: left;
+    padding-left: 10px;
+}
+.espaco{
+    color: rgba(0, 0, 0, 0%);
+}
+.foot {
+    background-color: rgba(91, 91, 91, 0.7);
+    font-size: 10px;
+    padding-top: 5px;
+}
+#cima {
+    color: rgba(0, 0, 0, 0%);
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'horizon';
+    font-style: normal;
+    font-weight: normal;
+    src: local('horizon.otf')url('assets/horizon.otf') format('otf');
+}
